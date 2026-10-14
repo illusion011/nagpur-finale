@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mock LG4All</title>
+    <style>
+        #otpModal { display: none; position: fixed; top: 20%; left: 30%; background: #fff; border: 1px solid #ccc; padding: 20px; z-index: 1000; }
+    </style>
+</head>
+<body>
+    <h2>Mock LG4All Customer Bidding</h2>
+    
+    <table id="gvNGSIDetails" border="1">
+        <tr>
+            <th>Serial No</th><th>Model</th><th>Product</th><th>Dealer Price</th><th>Discount %</th><th>Select</th>
+        </tr>
+        <tr>
+            <td><span id="lblsrno_gv_1">SN123456</span></td>
+            <td><span id="lblModelCode_gv_1">MODEL-X</span></td>
+            <td><span id="lblProduct_gv_1">REF</span></td>
+            <td><span id="lbldealerp_gv_1">10000</span></td>
+            <td><span id="lbldp_gv_1">70%</span></td>
+            <td><input type="checkbox" id="chkSelect_1" /></td>
+        </tr>
+    </table>
+
+    <button id="btnSave" onclick="showOtpModal()">Save Selected</button>
+
+    <div id="otpModal">
+        <h3>OTP Validation</h3>
+        <input type="text" id="otpInput" placeholder="Enter OTP" />
+        <br><br>
+        <input type="button" value="Submit OTP" onclick="submitOtp()" />
+    </div>
+
+    <script>
+        function showOtpModal() {
+            setTimeout(() => {
+                alert("OTP has been sent to your registered email id");
+                document.getElementById('otpModal').style.display = 'block';
+            }, 500); // simulate server delay
+        }
+
+        function submitOtp() {
+            // First alert: OTP validated
+            alert("OTP validated successfully.");
+            
+            // Second alert: Rows saved (simulate server delay)
+            setTimeout(() => {
+                alert("SUCCESS: 1 rows saved successfully.");
+                document.getElementById('otpModal').style.display = 'none';
+            }, 500);
+        }
+    </script>
+</body>
+</html>

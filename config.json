@@ -1,0 +1,11 @@
+{
+    "target_url": "https://www.lg4all.com/pod/?Code=IN24997500",
+    "target_discount": "50",
+    "auto_submit_otp": false,
+    "gmail_address": "rakeshrpandey8253@gmail.com",
+    "gmail_app_password": "dbec pyix cdcn drok",
+    "auto_read_email_otp": true,
+    "auto_monitor_updates": true,
+    "poll_interval_seconds": 5,
+    "email_poll_timeout": 60
+}
